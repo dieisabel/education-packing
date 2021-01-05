@@ -5,7 +5,7 @@ FigureVars Figure::create(int x, int y)
 {
     FigureVars vars;
     Point points[360];
-    _math->calculateCircle(points, _radius, {x, y});
+    calculateCircle(points, _radius, {x, y});
     VertexArray circle(LineStrip, 0);
 
     for (int i = 0; i < 360; i++)
@@ -17,7 +17,7 @@ FigureVars Figure::create(int x, int y)
 
     vars.figure = circle;
     vars.center = {x, y};
-    vars.area = _math->calculateArea(_radius);
+    vars.area = calculateArea(_radius);
     vars.radius = _radius;
     return vars;
 }

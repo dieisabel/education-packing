@@ -5,7 +5,7 @@ bool Field::checkIsFree(int x, int y, int radius)
 {
     for (int i = 0; i < _figures.size(); i++)
     {
-        if (!(_math->calculateDistance(_figures[i].center, {x, y}) >
+        if (!(calculateDistance(_figures[i].center, {x, y}) >
                                        _figures[i].radius + radius))
         {
             return false;
@@ -59,7 +59,7 @@ VertexArray Field::show()
 {
     Point points[5];
 
-    _math->calculateRectangle(points, {_center.x, _center.y}, _width, _height);
+    calculateRectangle(points, {_center.x, _center.y}, _width, _height);
 
     VertexArray rectangle(LineStrip, 0);
 
@@ -78,7 +78,7 @@ FigureVars Field::del(bool &flag, int x, int y, int radius)
     FigureVars tmp;
     for (int i = 0; i < _figures.size(); i++)
     {
-        if (_math->calculateDistance(_figures[i].center, {x, y}) <
+        if (calculateDistance(_figures[i].center, {x, y}) <
                                      _figures[i].radius)
         {
             tmp = _figures[i];

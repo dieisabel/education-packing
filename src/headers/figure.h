@@ -13,13 +13,13 @@
 #define _USE_MATH_DEFINES
 
 using namespace sf;
+using namespace Math;
 
 
 class Figure
 {
 
 private:
-    Math *_math;
     int _radius = 20;
 
 public:

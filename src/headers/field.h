@@ -13,6 +13,7 @@
 #include "../utils/figure_vars.cpp"
 
 using namespace sf;
+using namespace Math;
 
 
 class Field
@@ -24,8 +25,6 @@ private:
     Point _center;
 
     std::vector<FigureVars> _figures;
-
-    Math *_math;
 
     void add(FigureVars figure);
     bool checkBorder(int x, int y, int radius);

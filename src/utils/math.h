@@ -8,15 +8,15 @@
 
 #define _USE_MATH_DEFINES
 
-class Math
-{
 
-public:
+namespace Math
+{
     int calculateDistance(Point point_1, Point point_2);
     void calculateCircle(Point points[], int radius, Point position);
-    void calculateRectangle(Point points[], Point center, 
+    void calculateRectangle(Point points[], Point center,
                             int width, int height);
     int calculateArea(int radius);
-};
+}
+
 
 #endif
