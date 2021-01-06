@@ -2,11 +2,10 @@
 
 
 Packing::Packing(int width, int height)
+    : _packingField(width, height)
 {
     _window.create(VideoMode(width, height), "Packing");
     _window.setFramerateLimit(60);
-
-    _packingField.set(width, height);
 }
 
 void Packing::run()

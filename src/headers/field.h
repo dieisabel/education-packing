@@ -31,7 +31,7 @@ private:
     bool checkIsFree(int x, int y, int radius);
 
 public:
-    void set(int windowWidth, int windowHeight, Point center);
+    Field(int windowWidth, int windowHeight, Point center);
 
     bool place(FigureVars figure);
     FigureVars del(bool &flag, int x, int y, int radius);

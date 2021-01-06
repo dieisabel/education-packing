@@ -1,14 +1,14 @@
 #include "../headers/packing_field.h"
 
 
-void PackingField::set(int width, int height)
+PackingField::PackingField(int width, int height)
+    : _figure(), _field(width, height, {width / 2, height / 2}), 
+      _statusBar("./assets/fonts/montserrat-regular.ttf")
 {
-    _field.set(width, height, {width / 2, height / 2});
-    _statusBar.set("./assets/fonts/montserrat-regular.ttf");
-
     _value = 0;
     _maxValue = 20000;
 }
+
 
 void PackingField::changeLimit(int value)
 {

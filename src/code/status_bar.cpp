@@ -1,7 +1,7 @@
 #include "../headers/status_bar.h"
 
 
-void StatusBar::set(string path)
+StatusBar::StatusBar(string path)
 {
     _font = loadFont(path);
 

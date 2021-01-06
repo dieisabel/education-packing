@@ -20,7 +20,7 @@ private:
     int _maxValue;
 
 public:
-    void set(int width, int height);
+    PackingField(int width, int height);
 
     void changeLimit(int value);
     void changeRadius(int value);

@@ -23,6 +23,8 @@ private:
     int _radius = 20;
 
 public:
+    Figure() { };
+
     FigureVars create(int x, int y);
 
     int getRadius() { return _radius;};

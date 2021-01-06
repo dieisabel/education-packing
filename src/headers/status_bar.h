@@ -21,7 +21,7 @@ private:
     Font loadFont(string path);
 
 public:
-    void set(string path);
+    StatusBar(string path);
 
     void overflow(int value, int maxValue);
     void normal(int value, int maxValue);

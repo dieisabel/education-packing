@@ -31,7 +31,7 @@ bool Field::checkBorder(int x, int y, int radius)
     return false;
 }
 
-void Field::set(int windowWidth, int windowHeight, Point center)
+Field::Field(int windowWidth, int windowHeight, Point center)
 {
     _width  = windowWidth / 2;
     _height = windowHeight / 2;
